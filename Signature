@@ -1,0 +1,11 @@
+/******************************************************
+   KnR 1-21
+   --------
+   Write a program "entab" which replaces strings of
+   blanks with the minimum number of tabs and blanks
+   to achieve the same spacing.
+
+   Author:  Valentino Vizner
+   email: valentino.vizner@gmail.com
+
+******************************************************/ 

@@ -1,0 +1,37 @@
+
+
+
+int main() {
+  char c;
+  char wotab[MAXLINE]; 
+
+  int i, sps;
+
+  i = 0;
+  while ((c = getchar()) != EOF) {
+    if (i == (MAXLINE - 2)) { 
+
+      wotab[i] = '\n';
+      ++i;
+      wotab[i] = '\0';
+      printf("%s\n", wotab);
+      printf("LINE IS GREATER THAN 1000 CHAR\n");
+    } else if (c == '\t') {
+      for (sps = SPACES; sps > 0; --sps) {
+        wotab[i] = ' ';
+        ++i;
+      }
+    } else if (c == '\n') {
+      wotab[i] = '\n';
+      ++i;
+      wotab[i] = '\0';
+      printf("%s", wotab);
+      i = 0;
+    } else {
+      wotab[i] = c;
+      ++i;
+    }
+  }
+  return 
+ 0;
+}
