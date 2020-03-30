@@ -4,7 +4,7 @@
 
 // Printing elements of array and its square
 // replace int with void in main to show errors
-void main() {
+void main(void) {
   // Declarations
   double A[5] = {
       [0] = 9.0,
